@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        exo: ['Exo 2', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +60,14 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        vk: {
+          purple: "hsl(var(--vk-purple))",
+          "purple-foreground": "hsl(var(--vk-purple-foreground))",
+          teal: "hsl(var(--vk-teal))",
+          "dark-card": "hsl(var(--vk-dark-card))",
+          "darker-card": "hsl(var(--vk-darker-card))",
+          border: "hsl(var(--vk-border))",
         },
       },
       borderRadius: {
