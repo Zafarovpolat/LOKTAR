@@ -13,51 +13,52 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 195 100% 7.1%; /* #001324 */
+    --foreground: 0 0% 100%; /* white text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 195 100% 10.2%; /* #001A30 */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 195 100% 12.5%; /* #00203A */
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 166 89% 50%; /* #11E5B3 teal accent */
+    --primary-foreground: 225 30% 7%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 195 100% 10.2%; /* #001A30 */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 195 100% 10.2%;
+    --muted-foreground: 225 6% 57%; /* #92909A */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 166 89% 50%; /* #11E5B3 */
+    --accent-foreground: 225 30% 7%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 100%; /* white borders */
+    --input: 210 33% 20%; /* #193044 */
+    --ring: 166 89% 50%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* VKontakte specific colors */
+    --vk-purple: 291 85% 65%; /* #CF52FE */
+    --vk-purple-foreground: 248 28% 31%;
+    --vk-teal: 166 89% 50%; /* #11E5B3 */
+    --vk-dark-card: 195 100% 10.2%; /* #001A30 */
+    --vk-darker-card: 195 100% 8.2%; /* #01213C */
+    --vk-border: 210 33% 20%; /* #193044 */
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 195 100% 10.2%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 166 89% 50%;
+    --sidebar-primary-foreground: 225 30% 7%;
+    --sidebar-accent: 195 100% 12.5%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 33% 20%;
+    --sidebar-ring: 166 89% 50%;
   }
 
   .dark {
