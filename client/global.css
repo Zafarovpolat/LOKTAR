@@ -37,11 +37,11 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 100%; /* white borders */
+    --border: 0 0% 100% / 0.12; /* subtle global borders */
     --input: 210 33% 20%; /* #193044 */
     --ring: 166 89% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.875rem; /* softer rounding */
 
     /* VKontakte specific colors */
     --vk-purple: 291 85% 65%; /* #CF52FE */
@@ -49,7 +49,7 @@
     --vk-teal: 166 89% 50%; /* #11E5B3 */
     --vk-dark-card: 195 100% 10.2%; /* #001A30 */
     --vk-darker-card: 195 100% 8.2%; /* #01213C */
-    --vk-border: 210 33% 20%; /* #193044 */
+    --vk-border: 0 0% 100% / 0.10; /* subtle section borders */
 
     --sidebar-background: 195 100% 10.2%;
     --sidebar-foreground: 0 0% 100%;
@@ -57,7 +57,7 @@
     --sidebar-primary-foreground: 225 30% 7%;
     --sidebar-accent: 195 100% 12.5%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 210 33% 20%;
+    --sidebar-border: 0 0% 100% / 0.10;
     --sidebar-ring: 166 89% 50%;
   }
 
@@ -86,7 +86,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 100%;
+    --border: 0 0% 100% / 0.10;
     --input: 210 33% 20%;
     --ring: 166 89% 50%;
     --sidebar-background: 195 100% 10.2%;
@@ -95,7 +95,7 @@
     --sidebar-primary-foreground: 225 30% 7%;
     --sidebar-accent: 195 100% 12.5%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 210 33% 20%;
+    --sidebar-border: 0 0% 100% / 0.10;
     --sidebar-ring: 166 89% 50%;
   }
 }
