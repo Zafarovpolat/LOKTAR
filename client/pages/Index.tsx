@@ -90,14 +90,14 @@ export default function Index() {
       name: "Анонимный Таргетолог",
       amount: "80 тыс. ₽",
       leads: "54 321",
-      niche: "Не опред��лена",
+      niche: "Не определена",
       score: 85,
       rank: "7 место",
       color: "default"
     },
     {
       id: 8,
-      name: "Анонимный Таргетолог",
+      name: "Анон��мный Таргетолог",
       amount: "80 тыс. ₽",
       leads: "54 321",
       niche: "Не определена",
@@ -199,7 +199,7 @@ export default function Index() {
         <div className="flex flex-col lg:flex-row gap-6 px-6 lg:px-16 mb-16">
           {/* Filters Sidebar */}
           <div className="w-full lg:w-[400px] xl:w-[451px] flex-shrink-0">
-            <Card className="bg-vk-dark-card border-white relative overflow-hidden">
+            <Card className="bg-vk-dark-card border-white/10 relative overflow-hidden">
               {/* Blur Background Effects */}
               <div className="absolute -left-40 -top-20 w-96 h-48 bg-purple-600/20 rounded-full blur-3xl opacity-50"></div>
               <div className="absolute left-0 top-10 w-48 h-32 bg-vk-teal/80 rounded-full blur-3xl opacity-80"></div>
@@ -249,7 +249,7 @@ export default function Index() {
 
                   {/* Period Filter */}
                   <div className="bg-vk-dark-card border border-vk-border rounded-xl p-5">
-                    <h3 className="font-inter text-lg font-semibold text-white mb-6">Период</h3>
+                    <h3 className="font-inter text-lg font-semibold text-white mb-6">Перио��</h3>
                     
                     <div className="space-y-3">
                       {periodOptions.map((option) => (
@@ -363,7 +363,7 @@ export default function Index() {
                 </TabsTrigger>
                 <TabsTrigger 
                   value="agencies" 
-                  className="border border-white/30 text-white/30 data-[state=active]:border-white data-[state=active]:text-white"
+                  className="border border-white/20 text-white/40 data-[state=active]:border-white/60 data-[state=active]:text-white/80"
                 >
                   Агентства
                 </TabsTrigger>
@@ -496,7 +496,7 @@ export default function Index() {
 
         {/* Registration Section */}
         <div className="relative mt-16">
-          <Card className="bg-vk-popover border-white rounded-t-3xl border-b-0 mx-0 relative overflow-hidden">
+          <Card className="bg-vk-popover border-white/10 rounded-t-3xl border-b-0 mx-0 relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute -left-40 -top-20 w-96 h-48 bg-purple-600/20 rounded-full blur-3xl opacity-50"></div>
             <div className="absolute right-60 top-20 w-48 h-32 bg-vk-teal/80 rounded-full blur-3xl opacity-80"></div>
@@ -505,7 +505,7 @@ export default function Index() {
               <div className="max-w-2xl mx-auto space-y-7">
                 <div>
                   <h2 className="font-exo text-3xl lg:text-4xl font-medium text-white mb-2">
-                    Зарегистрируйтесь
+                    Зар��гистрируйтесь
                   </h2>
                   <p className="font-exo text-white/70">
                     чтобы получить доступ к контактам таргетологов и агентств
