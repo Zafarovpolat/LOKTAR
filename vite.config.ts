@@ -4,7 +4,6 @@ import path from "path";
 import { createServer } from "./server";
 
 export default defineConfig(({ mode }) => ({
-  root: "./client", // ✅ Указываем корневую папку для клиента
   base: '/',
   server: {
     host: "::",
@@ -15,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "../dist", // ✅ Относительно root (client), выводим в корневой dist
+    outDir: "dist", // ✅ Обычный dist в корне
     emptyOutDir: true,
   },
   plugins: [react(), expressPlugin()],
@@ -33,3 +32,7 @@ function expressPlugin(): Plugin {
     apply: "serve",
     configureServer(server) {
       const app = createServer();
+      server.middlewares.use(app);
+    },
+  };
+}
