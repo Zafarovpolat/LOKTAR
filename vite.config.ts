@@ -3,9 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { createServer } from "./server";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/', // Явно указываем базовый путь
+  root: "./client", // ✅ Указываем корневую папку для клиента
+  base: '/',
   server: {
     host: "::",
     port: 8080,
@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "dist", // ✅ Изменено на стандартный путь для Vercel
+    outDir: "../dist", // ✅ Относительно root (client), выводим в корневой dist
     emptyOutDir: true,
   },
   plugins: [react(), expressPlugin()],
@@ -30,10 +30,6 @@ export default defineConfig(({ mode }) => ({
 function expressPlugin(): Plugin {
   return {
     name: "express-plugin",
-    apply: "serve", // Только в dev режиме
+    apply: "serve",
     configureServer(server) {
       const app = createServer();
-      server.middlewares.use(app);
-    },
-  };
-}
