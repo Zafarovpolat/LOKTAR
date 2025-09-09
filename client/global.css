@@ -49,7 +49,7 @@
     --vk-teal: 166 89% 50%; /* #11E5B3 */
     --vk-dark-card: 195 100% 10.2%; /* #001A30 */
     --vk-darker-card: 195 100% 8.2%; /* #01213C */
-    --vk-border: 0 0% 100% / 0.10; /* subtle section borders */
+    --vk-border: 0 0% 100% / 0.1; /* subtle section borders */
 
     --sidebar-background: 195 100% 10.2%;
     --sidebar-foreground: 0 0% 100%;
@@ -57,7 +57,7 @@
     --sidebar-primary-foreground: 225 30% 7%;
     --sidebar-accent: 195 100% 12.5%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 100% / 0.10;
+    --sidebar-border: 0 0% 100% / 0.1;
     --sidebar-ring: 166 89% 50%;
   }
 
@@ -86,7 +86,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 100% / 0.10;
+    --border: 0 0% 100% / 0.1;
     --input: 210 33% 20%;
     --ring: 166 89% 50%;
     --sidebar-background: 195 100% 10.2%;
@@ -95,7 +95,7 @@
     --sidebar-primary-foreground: 225 30% 7%;
     --sidebar-accent: 195 100% 12.5%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 100% / 0.10;
+    --sidebar-border: 0 0% 100% / 0.1;
     --sidebar-ring: 166 89% 50%;
   }
 }
@@ -107,11 +107,19 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
   }
 
   .font-exo {
-    font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family:
+      "Exo 2",
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
   }
 
   /* VKontakte theme utilities */

@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-        exo: ['Exo 2', 'sans-serif'],
+        inter: ["Inter", "sans-serif"],
+        exo: ["Exo 2", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
